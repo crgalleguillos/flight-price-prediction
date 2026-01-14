@@ -1,69 +1,69 @@
-# Predicción de Precios de Vuelos con Machine Learning
+# Flight Price Prediction with Machine Learning
 
-## Descripción general
-Este proyecto desarrolla un modelo de predicción de precios de vuelos en los segmentos **Economy** y **Business**, aplicando un flujo completo de **Machine Learning supervisado**, desde la exploración de datos hasta la evaluación de modelos.
+## Overview
+This project develops a **flight price prediction model** for the **Economy** and **Business** segments, applying a complete **supervised Machine Learning workflow**, from data exploration to model evaluation.
 
-El análisis busca **identificar los factores que más influyen en el costo de los vuelos** y construir modelos capaces de anticipar precios a partir de variables como la aerolínea, el origen, el destino, la duración del vuelo y las escalas.
+The analysis aims to **identify the factors that most strongly influence flight prices** and to build models capable of anticipating fares based on variables such as airline, origin, destination, flight duration, and number of stops.
 
-El trabajo integra una perspectiva **analítica, técnica y de negocio**, orientada a mejorar la comprensión del mercado aéreo y apoyar estrategias de **pricing dinámico y optimización comercial**.
+The project integrates an **analytical, technical, and business-oriented perspective**, focused on improving the understanding of the airline market and supporting **dynamic pricing strategies and commercial optimization**.
 
 ---
 
-## Flujo metodológico
+## Methodological Workflow
 
 ### 1. Exploratory Data Analysis (EDA)
-- Limpieza y detección de valores atípicos.
-- Análisis univariado y bivariado de variables clave.
-- Estudio de correlaciones y distribución de precios.
+- Data cleaning and outlier detection.
+- Univariate and bivariate analysis of key variables.
+- Study of correlations and price distributions.
 
-### 2. Ingeniería de características
-- Generación de variables temporales (`month`, `day`, `weekday`).
-- Codificación categórica mediante **One-Hot Encoding**.
-- Escalado selectivo de variables numéricas con **MinMaxScaler**.
+### 2. Feature Engineering
+- Generation of time-based variables (`month`, `day`, `weekday`).
+- Categorical encoding using **One-Hot Encoding**.
+- Selective scaling of numerical variables with **MinMaxScaler**.
 
-### 3. Modelado predictivo
-Comparación de tres enfoques de regresión representativos:
-- **Ridge Regression**: modelo base lineal con regularización L2.
-- **Random Forest Regressor**: ensamble de árboles que captura relaciones no lineales.
-- **Gradient Boosting Regressor**: modelo secuencial optimizado sobre errores residuales.
+### 3. Predictive Modeling
+Comparison of three representative regression approaches:
+- **Ridge Regression**: linear baseline model with L2 regularization.
+- **Random Forest Regressor**: tree-based ensemble capturing non-linear relationships.
+- **Gradient Boosting Regressor**: sequential model optimized on residual errors.
 
-Las métricas de evaluación utilizadas fueron: **MAE**, **RMSE** y **R²**.
-
----
-
-## Resultados principales
-
-| Segmento | Modelo | R² | MAE (error medio) |
-|-----------|---------|----|------------------|
-| Economy   | Random Forest | **0.87** | 586 |
-| Business  | Random Forest | **0.85** | 2550 |
-
-- **Random Forest** fue el modelo con mejor equilibrio entre precisión y generalización.
-- Las variables de **duración del vuelo**, **aerolínea** y **rutas origen–destino** mostraron la mayor influencia en el precio final.
+The evaluation metrics used were **MAE**, **RMSE**, and **R²**.
 
 ---
 
-## Tecnologías utilizadas
+## Main Results
 
-| Herramienta | Uso principal |
-|--------------|---------------|
-| **Python 3.11+** | Lenguaje de desarrollo |
-| **Pandas / NumPy** | Limpieza y transformación de datos |
-| **Matplotlib / Seaborn** | Visualización exploratoria |
-| **Scikit-learn** | Modelado predictivo y evaluación |
-| **Jupyter Notebook** | Documentación y flujo analítico |
+| Segment  | Model         | R²   | MAE (mean error) |
+|----------|---------------|------|------------------|
+| Economy  | Random Forest | **0.87** | 586 |
+| Business | Random Forest | **0.85** | 2550 |
+
+- **Random Forest** achieved the best balance between accuracy and generalization.
+- **Flight duration**, **airline**, and **origin–destination routes** showed the strongest influence on final ticket prices.
 
 ---
 
-## Autor
+## Technologies Used
+
+| Tool | Main Use |
+|------|----------|
+| **Python 3.11+** | Development language |
+| **Pandas / NumPy** | Data cleaning and transformation |
+| **Matplotlib / Seaborn** | Exploratory visualization |
+| **Scikit-learn** | Predictive modeling and evaluation |
+| **Jupyter Notebook** | Documentation and analytical workflow |
+
+---
+
+## Author
 
 **Cristián Andrés Galleguillos Vega**  
-Biólogo · Máster en Ingeniería en Recursos Naturales · Máster en Data Science & Big Data  
-**Ubicación:** Chile  
+Biologist · MSc in Natural Resources Engineering · MSc in Data Science & Big Data  
+**Location:** Chile  
 **LinkedIn:** [Cristián Galleguillos Vega](https://www.linkedin.com/in/cristi%C3%A1n-galleguillos-vega-267343198/)
 
 ---
 
-## Conclusión
-Este proyecto demuestra la aplicación práctica de **Machine Learning para la predicción de precios** en un contexto real de negocio.  
-El flujo analítico propuesto es **reproducible, interpretable y escalable**, lo que lo convierte en una base sólida para futuros proyectos de **optimización de precios, predicción de demanda** o análisis de comportamiento del consumidor.
+## Conclusion
+This project demonstrates the practical application of **Machine Learning for price prediction** in a real-world business context.  
+The proposed analytical workflow is **reproducible, interpretable, and scalable**, making it a solid foundation for future projects in **price optimization, demand forecasting**, or **consumer behavior analysis**.
