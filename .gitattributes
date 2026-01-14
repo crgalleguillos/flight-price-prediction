@@ -1,0 +1,9 @@
+# Force consistent line endings
+* text=auto
+
+# Notebooks and markdown
+*.ipynb text eol=lf
+*.md text eol=lf
+
+# HTML
+*.html text eol=lf
